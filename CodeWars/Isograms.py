@@ -9,18 +9,11 @@ Example: (Input --> Output)
 "moOse" --> false (ignore letter case)"""
 
 def isogram(string):
-    string = string.lower()
-    if string == "":
-        return True
-    char_list = [char for char in string.lower()]
-    char_count= []
-    for char in char_list:
-        char_count.append(char_list.count(char))
-    for any in char_count:
-        if any > 1 :
+    for char in string:
+        if string.count(char) > 1:
             return False
     return True
-            
+
+print(isogram('moOse'))
 
 
-print(isogram('thequickbrownfoxjumpsoverthelazydog'))
