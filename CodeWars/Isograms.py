@@ -9,6 +9,7 @@ Example: (Input --> Output)
 "moOse" --> false (ignore letter case)"""
 
 def isogram(string):
+    string = string.lower()
     for char in string:
         if string.count(char) > 1:
             return False
