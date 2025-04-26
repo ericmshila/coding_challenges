@@ -17,4 +17,4 @@ def testit(a,b):
 
 # a * b ?
 # test.assert_equals(testit(1, 1), 1)
-# test.assert_equals(testit(1, 3), 3)
+# test.assert_equals(testit(1, 3), 3)v
